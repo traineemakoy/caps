@@ -1,0 +1,79 @@
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: #fff;
+            display: flex;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+            overflow: hidden;
+        }
+
+        .logo-section {
+            flex: 1;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .logo-section img {
+            width: 100%;
+            max-width: 250px;
+        }
+
+        .login-section {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .login-section h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .login-section form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-section input {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-section button {
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-section .links {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .login-section .links a {
+            color: green;
+            text-decoration: none;
+        }
+
+        .error {
+            color: red;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .title {
+            text-align: center;
+            margin-top: 30px;
+        }

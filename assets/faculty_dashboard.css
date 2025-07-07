@@ -1,0 +1,57 @@
+/* assets/css/style.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.topbar {
+    background: #f1f1f1;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.sidebar {
+    width: 220px;
+    background: white;
+    padding: 20px 0;
+    height: 100vh;
+    border-right: 1px solid #ccc;
+    position: fixed;
+}
+
+.sidebar button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px 20px;
+    width: 80%;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.sidebar button:hover {
+    background-color: darkgreen;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.logout-btn {
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: darkred;
+}

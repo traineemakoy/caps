@@ -1,0 +1,153 @@
+/* assets/css/style.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ✅ Improved Topbar */
+.topbar {
+    background: #eee0e0;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.topbar-left {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.topbar-center {
+    font-weight: bold;
+}
+
+.topbar-right {
+    margin: 0;
+}
+
+/* ✅ Logout Button */
+.logout-btn {
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: darkred;
+}
+
+/* ✅ Sidebar Navigation */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    overflow-y: auto;
+    background: white;
+    padding: 70px 0 10px 0; /* 🔥 Add top padding to avoid overlap */
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #ccc;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    z-index: 998;
+}
+
+
+/* ✅ Sidebar Buttons */
+.sidebar button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px 20px;
+    width: 80%;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 14px;
+
+    /* 🛠 Ensures consistent rendering */
+    visibility: visible;
+}
+
+/* 🧼 Optional: Fix emoji alignment width */
+.sidebar button::before {
+    display: inline-block;
+    width: 16px;
+}
+
+.sidebar button:hover {
+    background-color: darkgreen;
+}
+
+/* ✅ Main Page Content */
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+/* ✅ Table Styling (shared for all modules) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #006400;
+    color: white;
+}
+
+/* ✅ Form controls (for filters or announcement forms) */
+form label {
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+form select, form input[type="text"], form textarea {
+    padding: 6px;
+    margin-right: 10px;
+}
+
+/* 🔔 Announcement Form Styling */
+.announcement-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.announcement-form input[type="text"],
+.announcement-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.announcement-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
