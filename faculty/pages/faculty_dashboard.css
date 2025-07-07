@@ -1,0 +1,132 @@
+/* ===== faculty_dashboard.css ===== */
+
+/* Reset basic margin and font */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Top header area */
+.topbar {
+    background-color: #f2e1e1;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.topbar form {
+    margin: 0;
+}
+
+.logout-btn {
+    background-color: crimson;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: darkred;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 220px;
+    background-color: white;
+    padding-top: 20px;
+    height: 100vh;
+    position: fixed;
+    border-right: 1px solid #ccc;
+}
+
+.sidebar button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 12px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.sidebar button:hover {
+    background-color: darkgreen;
+}
+
+/* Page container for modules */
+.page-container {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+/* Section title */
+h2 {
+    display: flex;
+    align-items: center;
+    color: #006400;
+    margin-bottom: 20px;
+}
+
+h2::before {
+    content: '📘';
+    margin-right: 10px;
+}
+
+/* Filters */
+form label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+form select, form input[type="text"], form textarea {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+/* Table design */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #999;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #006400;
+    color: white;
+}
+
+/* Announcement section */
+textarea {
+    width: 300px;
+    height: 80px;
+    vertical-align: top;
+}
+
+/* Activity Log specific */
+#activity-log table {
+    margin-top: 10px;
+    width: 100%;
+}
+
+#activity-log th, #activity-log td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
